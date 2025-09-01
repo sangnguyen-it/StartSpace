@@ -5,41 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Spacescape</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
         }
         .container {
             background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 20px;
         }
         h1 {
             color: #2c3e50;
             text-align: center;
             border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 2.2em;
+            font-weight: 700;
         }
         h2 {
             color: #34495e;
-            margin-top: 30px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 600;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
         }
         .contact-info {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
+            background: linear-gradient(135deg, #ecf0f1 0%, #d5dbdb 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 5px solid #3498db;
         }
         .last-updated {
             text-align: center;
             font-style: italic;
             color: #7f8c8d;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
+            font-size: 0.95em;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .container {
+                padding: 20px;
+                margin: 0;
+            }
+            h1 {
+                font-size: 1.8em;
+                padding-bottom: 10px;
+            }
+            h2 {
+                font-size: 1.2em;
+                margin-top: 25px;
+                padding-left: 12px;
+            }
+            .contact-info {
+                padding: 15px;
+                margin: 20px 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+                font-size: 13px;
+            }
+            .container {
+                padding: 15px;
+                border-radius: 8px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.1em;
+                margin-top: 20px;
+            }
+            ul {
+                padding-left: 20px;
+            }
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            .container {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+        
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            body {
+                background: white;
+            }
+            .container {
+                border: 2px solid #000;
+            }
+            h1, h2 {
+                color: #000;
+            }
         }
     </style>
 </head>
